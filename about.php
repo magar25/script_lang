@@ -1,6 +1,6 @@
 <?php
 
-include 'include/header.php'
+include 'include/header.php';
 
 
 ?>
@@ -47,7 +47,7 @@ else
 
 <?php
 
-include 'include/footer.php'
+include 'include/footer.php';
 
 
 
