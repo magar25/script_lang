@@ -2,8 +2,6 @@
   session_start();
 
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,28 +9,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- <a href="index.php">Home</a> &nbsp;
-    <a href="about.php">About Us</a> &nbsp;
-    <a href="bloglist.php">Blogs</a> &nbsp;
-    <a href="contact.php">Contact Us</a> &nbsp; -->
+   
+    
 </head>
+<style type="text/css">
+
+  nav a {
+    padding: 10px;
+    color: rgb(164, 164, 236);
+    float: right;
+  }
+
+  h1 {
+    color: rgb(164, 164, 236);
+}
+.nav {
+    background-color: #00001a;
+    padding-top: 14px;
+    padding:22px;
+}
+</style>
 <body>
-  <nav>
-<ul>
+<div class="nav">
 <h1>Everyday blogs</h1>
-<li>  <a href="index.php">Home</a> &nbsp;</li>
-<li>  <a href="about.php">About Us</a> &nbsp;</li>
-<li>  <a href="bloglist.php">Blogs</a> &nbsp;</li>
-<li>  <a href="contact.php">Contact Us</a> &nbsp;</li>
+<nav>
 
-
-</ul>
+  <a href="contact.php">Contact Us</a> &nbsp;
+  <a href="about.php">About Us</a> &nbsp;
+   <a href="bloglist.php">Blogs</a> &nbsp;
+   
+   <a href="index.php">Home</a> &nbsp;
+   
 </nav>
-
-
+</div>
 <?php
     $cookie_name="username";
     $cookie_value ="Prashanna";
@@ -46,9 +57,7 @@
     $_SESSION['user_id']='PrashannaPunMagar@kbc.edu.np';
 
 
-
-
 ?>
-    
+
 </body>
 </html>
